@@ -1,10 +1,11 @@
-package wary.bhaskar.myto_doapp
+package wary.bhaskar.myto_doapp.fragments.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import wary.bhaskar.myto_doapp.R
 
 class ListFragment : Fragment() {
     override fun onCreateView(
