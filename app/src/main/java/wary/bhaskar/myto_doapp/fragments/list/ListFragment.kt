@@ -1,6 +1,8 @@
 package wary.bhaskar.myto_doapp.fragments.list
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.navigation.fragment.findNavController
@@ -22,6 +24,13 @@ class ListFragment : Fragment(R.layout.fragment_list) {
         binding.listLayout.setOnClickListener{
             findNavController().navigate(R.id.action_listFragment_to_updateFragment)
         }
+
+        setHasOptionsMenu(true)
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.list_fragment_menu, menu)
     }
 }
 
